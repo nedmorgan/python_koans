@@ -44,7 +44,7 @@ class AboutControlStatements(Koan):
                 break
             result = result * i
             i += 1
-        self.assertEqual(__, result)
+        self.assertEqual(3628800, result)
 
     def test_continue_statement(self):
         i = 0
@@ -54,14 +54,14 @@ class AboutControlStatements(Koan):
             if (i % 2) == 0:
                 continue
             result.append(i)
-        self.assertEqual([10], result)
+        self.assertEqual([1, 3, 5, 7, 9], result)
 
     def test_for_statement(self):
         phrase = ["fish", "and", "chips"]
         result = []
         for item in phrase:
             result.append(item.upper())
-        self.assertEqual(["Fish", "And", "Chips"], result)
+        self.assertEqual(['FISH', 'AND', 'CHIPS'], result)
 
     def test_for_statement_with_tuples(self):
         round_table = [

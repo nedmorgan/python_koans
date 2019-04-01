@@ -23,7 +23,7 @@ class AboutListAssignments(Koan):
                                           "Ricky", "Bobby", "Worthington"]
         self.assertEqual("Sir", title)
         self.assertEqual(['Ricky', 'Bobby'], first_names)
-        self.assertEqual("Worthinton", last_name)
+        self.assertEqual("Worthington", last_name)
 
     def test_parallel_assignments_with_sublists(self):
         first_name, last_name = [["Willie", "Rae"], "Johnson"]

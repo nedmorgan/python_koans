@@ -12,7 +12,7 @@ class AboutLists(Koan):
     def test_creating_lists(self):
         empty_list = list()
         self.assertEqual(list, type(empty_list))
-        self.assertEqual(True, len(empty_list))
+        self.assertEqual(0, len(empty_list))
 
     def test_list_literals(self):
         nums = list()
@@ -33,7 +33,7 @@ class AboutLists(Koan):
         self.assertEqual('peanut', noms[0])
         self.assertEqual('jelly', noms[3])
         self.assertEqual('jelly', noms[-1])
-        self.assertEqual('peanut', noms[-3])
+        self.assertEqual('butter', noms[-3])
 
     def test_slicing_lists(self):
         noms = ['peanut', 'butter', 'and', 'jelly']
@@ -59,11 +59,11 @@ class AboutLists(Koan):
         self.assertEqual([5, 6, 7, 8], list(range(5, 9)))
 
     def test_ranges_with_steps(self):
-        self.assertEqual(__, list(range(5, 3, -1)))
-        self.assertEqual(__, list(range(0, 8, 2)))
-        self.assertEqual(__, list(range(1, 8, 3)))
-        self.assertEqual(__, list(range(5, -7, -4)))
-        self.assertEqual(__, list(range(5, -8, -4)))
+        self.assertEqual([5, 4], list(range(5, 3, -1)))
+        self.assertEqual([0, 2, 4, 6], list(range(0, 8, 2)))
+        self.assertEqual([1, 4, 7], list(range(1, 8, 3)))
+        self.assertEqual([5, 1, -3], list(range(5, -7, -4)))
+        self.assertEqual([5, 1, -3, -7], list(range(5, -8, -4)))
 
     def test_insertions(self):
         knight = ['you', 'shall', 'pass']
