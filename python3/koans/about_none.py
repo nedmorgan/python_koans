@@ -38,7 +38,7 @@ class AboutNone(Koan):
         #
         #     https://github.com/gregmalcolm/python_koans/wiki/Class-Attribute
 
-        self.assertEqual("NameError", ex2.__class__)
+        self.assertEqual("None", ex2.__class__)
 
         # What message was attached to the exception?
         # (HINT: replace __ with part of the error message.)
