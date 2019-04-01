@@ -7,11 +7,12 @@
 
 from runner.koan import *
 
+
 class AboutLists(Koan):
     def test_creating_lists(self):
         empty_list = list()
         self.assertEqual(list, type(empty_list))
-        self.assertEqual(__, len(empty_list))
+        self.assertEqual(True, len(empty_list))
 
     def test_list_literals(self):
         nums = list()
@@ -53,7 +54,7 @@ class AboutLists(Koan):
 
     def test_lists_and_ranges(self):
         self.assertEqual(range, type(range(5)))
-        self.assertNotEqual([1, 2, 3, 4, 5], range(1,6))
+        self.assertNotEqual([1, 2, 3, 4, 5], range(1, 6))
         self.assertEqual(__, list(range(5)))
         self.assertEqual(__, list(range(5, 9)))
 
@@ -106,4 +107,3 @@ class AboutLists(Koan):
 
         # Note, popping from the left hand side of a list is
         # inefficient. Use collections.deque instead.
-
